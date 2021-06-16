@@ -13,8 +13,16 @@ for (let i = 0; i < el.length; i++) {
 function changeBackground(color) {
     const bg = document.querySelector('.bg');
     bg.style.background = color;
- }
+}
 // change image on click
 function imgSlider(anything) {
     document.querySelector('.fruits').src = anything;
+}
+
+// toggle
+let menuToggle = document.querySelector('.toggle');
+let navigation = document.querySelector('.navigation');
+menuToggle.onclick = function () {
+    menuToggle.classList.toggle('active');
+    navigation.classList.toggle('active');
 }
